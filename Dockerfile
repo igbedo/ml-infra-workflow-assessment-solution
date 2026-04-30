@@ -1,7 +1,6 @@
 # Dockerfile for training the MNIST model
 # Uses CPU-only PyTorch by default. For GPU, see README instructions.
-LABEL Damian Igbe
-
+#LABEL org.opencontainers.image.authors="Damian Igbe"
 FROM python:3.11-slim
 
 # Keep Python output unbuffered so logs appear immediately in docker logs/terminal

@@ -25,7 +25,7 @@ Step 2:
 docker run --rm \
   -v "$(pwd)/data:/app/data" \
   -v "$(pwd)/results:/app/results" \
-  igbedo/mnist-trainer:latest
+  igbedo/mnist-trainer:1
 ```
 ---
 
@@ -49,7 +49,7 @@ Place these files in the same folder:
 From the folder containing the Dockerfile, run:
 
 ```bash
-docker build -t mnist-trainer:latest .
+docker build -t mnist-trainer:1 .
 ```
 
 ---
@@ -72,7 +72,7 @@ These folders will live on your host machine.
 docker run --rm \
   -v "$(pwd)/data:/app/data" \
   -v "$(pwd)/results:/app/results" \
-  mnist-trainer:latest
+  mnist-trainer:1
 ```
 
 ### Windows PowerShell
@@ -81,7 +81,7 @@ docker run --rm \
 docker run --rm `
   -v "${PWD}/data:/app/data" `
   -v "${PWD}/results:/app/results" `
-  mnist-trainer:latest
+  mnist-trainer:1
 ```
 
 After the run completes, check your host machine:
@@ -109,7 +109,7 @@ You can override the default command by passing arguments after the image name:
 docker run --rm \
   -v "$(pwd)/data:/app/data" \
   -v "$(pwd)/results:/app/results" \
-  mnist-trainer:latest \
+  mnist-trainer:1\
   python train_mnist.py \
   --data-dir /app/data \
   --output-dir /app/results \
@@ -148,7 +148,7 @@ Example GPU run command, after preparing a GPU-compatible image:
 docker run --rm --gpus all \
   -v "$(pwd)/data:/app/data" \
   -v "$(pwd)/results:/app/results" \
-  mnist-trainer:latest
+  mnist-trainer:2
 ```
 
 Inside the script, PyTorch automatically selects CUDA when available.
