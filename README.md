@@ -11,9 +11,10 @@ The training script writes:
 
 The key requirement is to use Docker bind mounts so those paths map to folders on your host.
 
+Docker Desktop was used to run the application. Ensure you install Docker Desktop or similar (like Miniukube) before running Docker commands. 
 ---
 
-## 1. Project files
+## 1. The project files
 
 Place these files in the same folder:
 
@@ -26,7 +27,7 @@ Place these files in the same folder:
 
 ---
 
-## 2. Build the Docker image
+## 2. Let's build the Docker image. The Dockerfile is commented for you to understand every line of the file.
 
 From the folder containing the Dockerfile, run:
 
