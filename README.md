@@ -72,6 +72,10 @@ docker run --rm `
   mnist-trainer:1
 ```
 
+# View the Output of the Training run in the results folder
+
+Note that every run creates an additional timestemp folder in the results folder so you may see several folders depending on the number of runs.
+
 After the run completes, check your host machine:
 
 ```bash
@@ -80,9 +84,10 @@ ls -R results
 
 You should see a timestamped folder similar to:
 
+
 ```text
 results/
-└── 20260430_153012/
+└── 20260430_233307/
     ├── checkpoint.pt
     └── train.log
 ```
