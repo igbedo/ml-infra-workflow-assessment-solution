@@ -1,4 +1,4 @@
-# Run the MNIST Training Script in Docker
+# Steps to Run the MNIST Training Script in Docker
 
 This setup runs `train_mnist.py` inside a Docker container and stores outputs on your host machine.
 
@@ -12,7 +12,24 @@ The training script writes:
 The key requirement is to use Docker bind mounts so those paths map to folders on your host.
 
 Docker Desktop was used to run the application. Ensure you install Docker Desktop or similar (like Miniukube) before running Docker commands. 
+
+I already pushed the image to DockerHub so you can run with just 2 steps:
+
+Step 1:
+```bash
+mkdir -p data results
+```
+
+Step 2:
+```bash
+docker run --rm \
+  -v "$(pwd)/data:/app/data" \
+  -v "$(pwd)/results:/app/results" \
+  igbedo/mnist-trainer:latest
+```
 ---
+
+To create the Image yourself, follow the instructions step by step.
 
 ## 1. The project files
 
