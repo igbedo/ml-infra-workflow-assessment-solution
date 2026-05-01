@@ -13,7 +13,7 @@ The training script writes:
 
 The key requirement is to use Docker bind mounts so those paths map to folders on your host. As per the instructions, you don't have to map the data directory to the laptop but if you need it, include it.
 
-Docker Desktop was used to run the application. Ensure you install Docker Desktop or similar (like Miniukube) before running Docker commands. Also ensure you have git client installed.
+Docker Desktop was used to run the application. Ensure you install Docker Desktop or similar (like Minikube) before running Docker commands. Also ensure you have git client installed.
 
 
 ---
