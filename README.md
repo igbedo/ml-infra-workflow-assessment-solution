@@ -36,7 +36,9 @@ git clone https://github.com/igbedo/ml-infra-workflow-assessment-solution.git
 The Dockerfile is commented for you to understand every line of the file.
 
 From the folder containing the Dockerfile, run:
-
+```bash
+cd ml-infra-workflow-assessment-solution
+```
 ```bash
 docker build -t mnist-trainer:1 .
 ```
