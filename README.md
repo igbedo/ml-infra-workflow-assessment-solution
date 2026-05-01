@@ -31,21 +31,24 @@ git clone https://github.com/igbedo/ml-infra-workflow-assessment-solution.git
 
 ---
 
-## 2. Build the Docker image. 
+## 2. Build the Docker image with Dockerfile. 
 
 The Dockerfile is commented for you to understand every line of the file.
 
-From the folder containing the Dockerfile, run:
+Ensure you are inside the cloned directory:
+
 ```bash
 cd ml-infra-workflow-assessment-solution
 ```
+You will find the Dockerfile in the cloned Directory. From the folder containing the Dockerfile, run:
+
 ```bash
 docker build -t mnist-trainer:1 .
 ```
 
 ---
 
-# How to run the container for training with outputs saved to the host
+# How to run the training container with outputs saved to the host
 
 ### macOS / Linux / WSL
 
